@@ -1,0 +1,18 @@
+{
+  "name": "github-hosts",
+  "version": "1.0.0",
+  "description": "定时更新github的hosts，参照了[github520](/521xueweihan/GitHub520)这个项目，不同的是它使用python，而此程序则使用的是js，其余部分区别不大，可以看做是[github520](/521xueweihan/GitHub520)的js版本",
+  "main": "index.js",
+  "scripts": {
+    "run": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitee.com:rscs/github-hosts.git"
+  },
+  "keywords": [
+    "github",
+    "hosts"
+  ],
+  "author": "xuhuading@foxmail.com"
+}
