@@ -1,5 +1,6 @@
 const dns = require("dns")
-const fs = require("fs")
+
+const handleHosts = require("./handleHosts")
 
 const front = "#官网：47.108.77.223"
 const rear = "#当前版本更新于：" + new Date().toLocaleString("zh-CN") + "\n#end"
@@ -79,25 +80,7 @@ for (let i of domains) {
         resultNum++
     })
 }
-const handleHosts = (data) => { //得到hosts后如何处理它
-    fs.writeFile("./hosts", data, { encoding: "utf-8" }, (err) => {
-        if (err) {
-            handleError(err)
-        }
-        console.log("successful!");
-    })
-    fs.readFile("./readme.template.md", { encoding: "utf-8" }, (err, template) => {
-        if (err) {
-            handleError(err)
-        }
-        template = template.replace("{{template:hosts}}", data)
-        fs.writeFile("./readme.md", template, { encoding: "utf-8" }, (err) => {
-            if (err) {
-                handleError(err)
-            }
-        })
-    })
-}
+
 const polling = () => {
     if (resultNum === domains.length) {
         const resultHosts = front + "\n\n" + jsonToHosts(hosts) + "\n\n" + rear //将结果加上前置文本与后缀文本
