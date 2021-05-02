@@ -45,10 +45,7 @@ const domains = [
     "media.githubusercontent.com"
 ]
 
-const handleError = (err) => {
-    console.error(err)
-    process.exit(0)
-}
+const handleError = require("./handleError")
 
 const jsonToHosts = (data) => {
     let result = ""

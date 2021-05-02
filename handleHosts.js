@@ -1,4 +1,5 @@
 const fs = require("fs")
+const handleError = require("./handleError")
 
 const _writeFile = (data) => { //得到hosts后如何处理它
     fs.writeFile("./hosts", data, { encoding: "utf-8" }, (err) => {
