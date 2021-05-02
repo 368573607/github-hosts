@@ -5,7 +5,7 @@ const handleHosts = (data) => { //得到hosts后如何处理它
         if (err) {
             handleError(err)
         }
-        console.log("successful!");
+        console.log("successful!")
     })
     fs.readFile("./readme.template.md", { encoding: "utf-8" }, (err, template) => {
         if (err) {
@@ -20,4 +20,4 @@ const handleHosts = (data) => { //得到hosts后如何处理它
     })
 }
 
-module.exports = handleHosts;
+module.exports = handleHosts

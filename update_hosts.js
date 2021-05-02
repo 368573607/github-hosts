@@ -47,7 +47,7 @@ const domains = [
 
 const handleError = (err) => {
     console.error(err)
-    process.exit(0);
+    process.exit(0)
 }
 
 const jsonToHosts = (data) => {
@@ -59,34 +59,39 @@ const jsonToHosts = (data) => {
     return result
 }
 
-const hosts = {}
-let resultNum = 0
-for (let i of domains) {
-    dns.resolve(i, (err, address) => {
-        if (err) {
-            handleError(err)
-        } else if (address) {
-            if (address.length > 1) {
-                for (let j of address) {
-                    if (j !== "0.0.0.0") {
-                        address = j
+const getHosts = () => {
+    const hosts = {}
+    let resultNum = 0
+    for (let i of domains) {
+        dns.resolve(i, (err, address) => {
+            if (err) {
+                handleError(err)
+            } else if (address) {
+                if (address.length > 1) {
+                    for (let j of address) {
+                        if (j !== "0.0.0.0") {
+                            address = j
+                        }
                     }
+                } else {
+                    address = address[0]
                 }
-            } else {
-                address = address[0]
+                hosts[i] = address
             }
-            hosts[i] = address
+            resultNum++
+        })
+    }
+
+    const polling = () => {
+        if (resultNum === domains.length) {
+            const resultHosts = front + "\n\n" + jsonToHosts(hosts) + "\n\n" + rear //将结果加上前置文本与后缀文本
+            handleHosts(resultHosts)
+            return resultHosts
+        } else {
+            setTimeout(polling, 1000) //轮询
         }
-        resultNum++
-    })
+    }
+    polling()
 }
 
-const polling = () => {
-    if (resultNum === domains.length) {
-        const resultHosts = front + "\n\n" + jsonToHosts(hosts) + "\n\n" + rear //将结果加上前置文本与后缀文本
-        handleHosts(resultHosts)
-    } else {
-        setTimeout(polling, 1000) //轮询
-    }
-}
-polling()
+module.exports = getHosts
