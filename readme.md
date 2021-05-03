@@ -15,13 +15,11 @@
 
 github.githubassets.com 185.199.110.154
 desktop.githubusercontent.com 185.199.111.133
-central.github.com 140.82.112.22
 assets-cdn.github.com 0.0.0.0
 camo.githubusercontent.com 185.199.110.133
 github.map.fastly.net 185.199.111.133
 github.io 0.0.0.0
 github.com 13.229.188.59
-github.global.ssl.fastly.net 198.27.124.186
 api.github.com 192.30.255.117
 raw.githubusercontent.com 0.0.0.0
 user-images.githubusercontent.com 185.199.108.133
@@ -35,14 +33,16 @@ avatars0.githubusercontent.com 185.199.110.133
 avatars.githubusercontent.com 185.199.111.133
 github-production-release-asset-2e65be.s3.amazonaws.com 52.216.24.140
 media.githubusercontent.com 185.199.108.133
-gist.github.com 243.185.187.39
-github-cloud.s3.amazonaws.com 52.217.83.116
-codeload.github.com 192.30.255.120
+github.global.ssl.fastly.net 108.160.167.159
+gist.github.com 59.24.3.173
+central.github.com 140.82.112.21
+github-cloud.s3.amazonaws.com 52.216.147.51
+github-com.s3.amazonaws.com 52.216.147.51
+github-production-user-asset-6210df.s3.amazonaws.com 52.216.147.51
+githubstatus.com 185.199.111.153
+github-production-repository-file-5c1aeb.s3.amazonaws.com 52.216.147.51
 github.community 64.71.168.201
-github-production-user-asset-6210df.s3.amazonaws.com 52.217.83.116
-github-production-repository-file-5c1aeb.s3.amazonaws.com 52.217.83.116
-github-com.s3.amazonaws.com 52.217.83.116
-githubstatus.com 185.199.109.153
+codeload.github.com 192.30.255.121
 
 #当前版本更新于：2021/5/3 上午10:40:43
 #end
