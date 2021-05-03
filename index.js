@@ -1,3 +1,3 @@
 const getHosts = require("./update_hosts")
 
-getHosts()
+setInterval(getHosts, 100 * 60 * 60)
