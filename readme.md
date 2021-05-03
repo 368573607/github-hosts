@@ -1,7 +1,7 @@
 # Github Hosts
-定时更新github的hosts，参照了[github520](/521xueweihan/GitHub520)这个项目，不同的是它使用python，而且是直接调用的ipaddress接口，而此程序则使用的是js，并使用原生dns模块，其余功能区别不大，可以看做是[github520](/521xueweihan/GitHub520)的js版本
+定时更新github的hosts，参照了[github520](/521xueweihan/GitHub520)这个项目，不同的是它使用python，而且是直接调用的ipaddress接口，而此程序则使用的是js，并使用原生dns模块，由于github520所生成的hosts有的时候任然解决不了github访问时好时坏的问题，所以我做了这个项目，针对大陆用户的速度有着明显的提升，可当然你也可以将此项目看做是github520的js版本
 
-所有Hosts域名均参照了[github520](/521xueweihan/GitHub520)，因为一些不明原因，有几个域名的ip将返回0.0.0.0，出现这个问题有可能跟防火墙有关，后期将会通过一些科学手段绕过它，目前这个问题不会影响基本的使用。
+所有Hosts域名均参照了github520，因为一些不明原因，有几个域名的ip将返回0.0.0.0，出现这个问题有可能跟防火墙有关，后期将会通过一些科学手段绕过它，目前这个问题不会影响基本的使用。
 
 作者官网：[红日初升的小站](http://47.108.77.223)
 
@@ -13,38 +13,38 @@
 #官网：47.108.77.223
 
 
-github.githubassets.com 185.199.110.154
-desktop.githubusercontent.com 185.199.111.133
+github.githubassets.com 185.199.109.154
 assets-cdn.github.com 0.0.0.0
-camo.githubusercontent.com 185.199.110.133
-github.map.fastly.net 185.199.111.133
+camo.githubusercontent.com 185.199.108.133
+github.map.fastly.net 185.199.108.133
+github.io 0.0.0.0
+github.com 13.250.177.223
 central.github.com 140.82.113.21
-github.global.ssl.fastly.net 185.60.216.169
-gist.github.com 203.98.7.65
-favicons.githubusercontent.com 185.199.109.133
+github.global.ssl.fastly.net 108.160.165.141
 raw.githubusercontent.com 0.0.0.0
 user-images.githubusercontent.com 185.199.108.133
-avatars5.githubusercontent.com 185.199.111.133
-avatars4.githubusercontent.com 185.199.111.133
-github.io 0.0.0.0
 avatars3.githubusercontent.com 185.199.108.133
 avatars2.githubusercontent.com 185.199.110.133
 avatars1.githubusercontent.com 185.199.110.133
-avatars0.githubusercontent.com 185.199.110.133
-github.com 13.229.188.59
+gist.github.com 52.74.223.119
 api.github.com 192.30.255.117
-avatars.githubusercontent.com 185.199.111.133
-github-cloud.s3.amazonaws.com 52.217.67.28
-github-production-release-asset-2e65be.s3.amazonaws.com 52.216.24.140
-githubstatus.com 185.199.110.153
-media.githubusercontent.com 185.199.108.133
-github-production-repository-file-5c1aeb.s3.amazonaws.com 52.217.41.52
-codeload.github.com 192.30.255.121
-github-com.s3.amazonaws.com 52.216.101.11
+avatars0.githubusercontent.com 185.199.110.133
+avatars.githubusercontent.com 185.199.109.133
+github-com.s3.amazonaws.com 52.217.128.49
+github-cloud.s3.amazonaws.com 52.217.128.49
+github-production-release-asset-2e65be.s3.amazonaws.com 52.216.229.243
+githubstatus.com 185.199.111.153
+desktop.githubusercontent.com 185.199.111.133
+avatars4.githubusercontent.com 185.199.111.133
+github-production-user-asset-6210df.s3.amazonaws.com 52.216.138.219
+github-production-repository-file-5c1aeb.s3.amazonaws.com 52.216.138.219
+favicons.githubusercontent.com 185.199.109.133
+codeload.github.com 192.30.255.120
 github.community 64.71.168.201
-github-production-user-asset-6210df.s3.amazonaws.com 52.216.101.11
+media.githubusercontent.com 185.199.111.133
+avatars5.githubusercontent.com 185.199.109.133
 
-#当前版本更新于：2021/5/3 上午10:40:43
+#当前版本更新于：2021/5/3 下午1:55:15
 #end
 ```
 
@@ -53,4 +53,8 @@ github-production-user-asset-6210df.s3.amazonaws.com 52.216.101.11
 ## 自动更新
 
 自动更新可以使用[switch hosts](/oldj/SwitchHosts)，官方的[自述文件](https://github.com/oldj/SwitchHosts#readme)很详细，可以参照
+
+## 其他
+
+此项目在我的网络环境下测试正常，但我不能保证在所有环境下都测试正常，因此，如果你的电脑使用了此hosts，打开github任然出现问题。那么，你可以clone或者下载本项目，在项目目录下运行：`node update_hosts`，控制台返回`successful!`之后你会发现hosts文件更新了，这就是最新的hosts，复制到电脑中即可（当然你需要一个node环境）
 
