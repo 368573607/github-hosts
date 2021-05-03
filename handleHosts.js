@@ -25,9 +25,9 @@ const _pushToRepo = () => {
     exec("git add .").then(() => {
         return exec("git commit -m update")
     }).then(() => {
-        return exec("git push origin")
+        return exec("git push -f origin")
     }).then(() => {
-        return exec("git push github")
+        return exec("git push -f github")
         console.info("推送至了两个repo")
     }).catch((err) => {
         handleError(err)
