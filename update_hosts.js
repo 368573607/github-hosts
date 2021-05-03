@@ -51,7 +51,7 @@ const jsonToHosts = (data) => {
     let result = ""
     for (let key in data) {
         const value = data[key] //遍历对象时的值
-        result += "\n" + key + " " + value
+        result += "\n" + value + " " + key
     }
     return result
 }
