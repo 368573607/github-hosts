@@ -23,7 +23,7 @@ const _writeFile = (data) => { //得到hosts后如何处理它
 }
 const _pushToRepo = () => {
     exec("git add .").then(() => {
-        return exec("git commit -m 'update'")
+        return exec("git commit -m update")
     }).then(() => {
         return exec("git push origin")
     }).then(() => {
