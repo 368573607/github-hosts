@@ -13,36 +13,36 @@
 #官网：47.108.77.223
 
 
-0.0.0.0 assets-cdn.github.com
-185.199.111.133 github.map.fastly.net
-185.199.110.133 camo.githubusercontent.com
-13.229.188.59 github.com
+69.171.225.13 github.global.ssl.fastly.net
+203.98.7.65 gist.github.com
+185.199.111.154 github.githubassets.com
+185.199.108.133 github.map.fastly.net
+13.250.177.223 github.com
 192.30.255.117 api.github.com
+0.0.0.0 github.io
 0.0.0.0 raw.githubusercontent.com
 185.199.108.133 avatars3.githubusercontent.com
 185.199.110.133 avatars2.githubusercontent.com
-185.199.109.133 avatars5.githubusercontent.com
 185.199.108.133 user-images.githubusercontent.com
-162.220.12.226 github.global.ssl.fastly.net
 185.199.110.133 avatars1.githubusercontent.com
 185.199.110.133 avatars0.githubusercontent.com
-52.216.238.235 github-production-release-asset-2e65be.s3.amazonaws.com
-185.199.108.133 favicons.githubusercontent.com
 185.199.108.133 avatars.githubusercontent.com
-54.251.140.56 codeload.github.com
-185.199.110.153 githubstatus.com
-52.217.107.180 github-production-repository-file-5c1aeb.s3.amazonaws.com
-52.217.107.180 github-production-user-asset-6210df.s3.amazonaws.com
-52.217.107.180 github-cloud.s3.amazonaws.com
-52.217.107.180 github-com.s3.amazonaws.com
-243.185.187.39 gist.github.com
-185.199.108.154 github.githubassets.com
-140.82.114.22 central.github.com
-185.199.109.133 desktop.githubusercontent.com
-185.199.110.153 github.io
-185.199.108.133 avatars4.githubusercontent.com
+52.217.80.20 github-production-release-asset-2e65be.s3.amazonaws.com
+52.216.114.59 github-cloud.s3.amazonaws.com
+185.199.111.133 camo.githubusercontent.com
+185.199.111.133 desktop.githubusercontent.com
+185.199.111.153 assets-cdn.github.com
+52.217.82.252 github-production-user-asset-6210df.s3.amazonaws.com
+185.199.111.133 avatars5.githubusercontent.com
+185.199.111.133 favicons.githubusercontent.com
+185.199.111.153 githubstatus.com
+140.82.112.21 central.github.com
+185.199.109.133 avatars4.githubusercontent.com
+52.217.82.252 github-com.s3.amazonaws.com
+52.217.82.252 github-production-repository-file-5c1aeb.s3.amazonaws.com
+192.30.255.120 codeload.github.com
 64.71.168.201 github.community
-185.199.111.133 media.githubusercontent.com
+185.199.110.133 media.githubusercontent.com
 
 #当前版本更新于：2021/5/3 下午1:58:10
 #end
